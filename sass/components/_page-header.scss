@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   height: 80px;
   display: flex;
@@ -7,14 +8,15 @@
   display: flex;
   align-items: center;
 }
-.site-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-
+// .site-nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 0;
+// }
 .logo {
+  position: absolute;
+  left: 15px;
   color: $accent-color;
   font-family: Raleway;
   font-weight: 700;
@@ -29,7 +31,6 @@
   color: $logo-color;
 }
 }
-
   .navigation{
   display: flex;
      &__link:hover,&__link:focus{
@@ -101,10 +102,10 @@
 
 }
   .contacts__icon{
+  display: none;
   margin-right: 10px;
   fill: $text-color;
-  transition: fill 250ms $timing-function;
+  transition: fill 250ms $timing-function; 
 }
- 
 
 

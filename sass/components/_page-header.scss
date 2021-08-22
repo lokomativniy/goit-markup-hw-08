@@ -1,7 +1,7 @@
 .page-header {
   position: relative;
   border-bottom: 1px solid #ececec;
-  height: 80px;
+  height: 60px;
   display: flex;
 }
 .container-header {
@@ -17,12 +17,12 @@
 .logo {
   position: absolute;
   left: 15px;
+  top: 16px;
   color: $accent-color;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-align: left;
   text-decoration: none;
   display: inline-block;
   
@@ -32,7 +32,7 @@
 }
 }
   .navigation{
-  display: flex;
+  margin-bottom: 301px;
      &__link:hover,&__link:focus{
   fill:$accent-color;
   color:$accent-color;
@@ -40,38 +40,39 @@
 }
   .navigation__item:not(:last-child) {
   margin-right: 50px;
+  margin-bottom: 32px;
 }
   .navigation__link {
+  display: block;
   color: $primary-text-color;
   text-decoration: none;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 33px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms $timing-function;
- 
 }
+ 
+
   .navigation__link--current {
   color: $accent-color;
   position: relative;
 }
-  .navigation__link--current::after{
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: $accent-color;
-  border-radius: 2px;
-}
+//   .navigation__link--current::after{
+//   position: absolute;
+//   content: "";
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 4px;
+//   background: $accent-color;
+//   border-radius: 2px;
+// }
 
 .contacts {
-  display: flex;
-  align-items: center;
-
+  // display: flex;
+  // align-items: center;
+  margin-bottom: 64px;
   &__link:hover &__icon, &__link:focus &__icon{
   fill:$accent-color; color:$accent-color;
 }
@@ -81,25 +82,24 @@
 }
 
  .contacts:not(:last-child) {
-  margin-right: 50px;
-}
+  margin-right: 50px;}
+
   .contacts__item {
   display: flex
 }
-  .contacts__item:not(:last-child){
-  margin-right: $card-interval;
-}
+//   .contacts__item:not(:last-child){
+//   margin-right: $card-interval;
+// }
   .contacts__link{
   display: flex;
   color: $text-color;
   text-decoration: none;
   align-items: center;
+  font-size: 24px;
   font-weight: 500;
+  letter-spacing: 0.02em;
   line-height: 1.14;
-  padding-top: 20px;
-  padding-bottom: 20px;
   transition: color 250ms $timing-function;
-
 }
   .contacts__icon{
   display: none;
@@ -108,4 +108,8 @@
   transition: fill 250ms $timing-function; 
 }
 
-
+.contacts__link--mobile{
+  color: $accent-color;
+  font-size: 34px;
+  margin-bottom: 33px;
+}

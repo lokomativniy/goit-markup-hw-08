@@ -6,8 +6,17 @@
    &__btn-close:hover &__btn-icon, &__btn-close:hover &__btn-icon{
   fill:$accent-color
 }
+  @media screen and (min-width: 480px) {
+   width: 450px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
-
+  @media screen and (min-width: 1170px){
+    width: 528px;
+  }
+}
 .modal__btn-close{
   position: absolute;
   top: 8px;

@@ -1,6 +1,6 @@
 .hero {
   background: $background-color;
-  padding: 200px 0;
+  padding: 200px 50px;
   text-align: center;
   height:600px;
   max-width: 1600px;
@@ -20,20 +20,33 @@
 }
 
 .features {
-
+// display: flex;
 }
-.features__item:not(:last-child) {
-  margin-right: $card-interval;
+.features__item{
+  text-align: center;
+  &:not(:last-child){
+  margin-bottom: 30px;}
 }
+// .features__item:not(:last-child) {
+//   margin-right: $card-interval;
+// }
 .features__box{
   display: flex;
+  justify-content: center;
   margin-bottom:$card-interval;
   background: $grey-color;
   align-items: center;
-  padding: 25px 100px;
+  padding: 25px 0;
   border-radius: 4px;
+  // text-align: center;
+}
+
+.features__icon{
+  
+ 
 }
 .features__title {
+  color:$primary-text-color;
   font-weight: 700;
   line-height: 1.14;
   font-size: 14px;
@@ -42,95 +55,96 @@
 .features__text {
   color: $text-color;
   line-height: 1.71;
+  text-align: left;
 }
 .images {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
 }
 .images__item{
-  position: relative;
-  display: flex;
-  justify-content: center;
+  // position: relative;
+  // display: flex;
+  // justify-content: center;
 }
-.images__title{
-  display: block;
-  bottom: 0;
-  padding: 27px 0;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-}
-.images__thumb{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(47, 48, 58, 0.8);
-  text-align: center;
-}
+// .images__title{
+//   display: block;
+//   bottom: 0;
+//   padding: 27px 0;
+//   color: #ffffff;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 1.14;
+// }
+// .images__thumb{
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   background-color: rgba(47, 48, 58, 0.8);
+//   text-align: center;
+// }
 
-.section--background {
-  background: $grey-color;
-}
+// .section--background {
+//   background: $grey-color;
+// }
 
-.team {
-  display: flex;
-  justify-content: space-between;
-}
-.team__item {
-  background: $primary-white-color;
-  box-shadow: $card-shadow;
-  border-radius: 0px 0px 4px 4px;
-  text-align: center;
-}
+// .team {
+//   display: flex;
+//   justify-content: space-between;
+// }
+// .team__item {
+//   background: $primary-white-color;
+//   box-shadow: $card-shadow;
+//   border-radius: 0px 0px 4px 4px;
+//   text-align: center;
+// }
 
-.team__stand {
-  padding: 30px 0;
-}
-.team__name {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.19;
-  margin-bottom: 10px;
-}
-.team__position {
-  color: $text-color;
-  font-size: 16px;
-  line-height: 1.19;
-  margin-bottom: 16px;
-}
+// .team__stand {
+//   padding: 30px 0;
+// }
+// .team__name {
+//   font-size: 16px;
+//   font-weight: 500;
+//   line-height: 1.19;
+//   margin-bottom: 10px;
+// }
+// .team__position {
+//   color: $text-color;
+//   font-size: 16px;
+//   line-height: 1.19;
+//   margin-bottom: 16px;
+// }
 
-.clients{
-  display: flex;
+// .clients{
+//   // display: flex;
 
-  &__link:hover &__icon, &__link:focus &__icon{
-  fill: $accent-color;
-}
-   &__link:hover, &__link:focus{
-  border-color: $accent-color;  
-}
-  &__icon:hover, &__icon:focus{
-  fill: $accent-color;
-}
-}
-.clients__item:not(:last-child){
-  margin-right: $card-interval;
-}
+//   &__link:hover &__icon, &__link:focus &__icon{
+//   fill: $accent-color;
+// }
+//    &__link:hover, &__link:focus{
+//   border-color: $accent-color;  
+// }
+//   &__icon:hover, &__icon:focus{
+//   fill: $accent-color;
+// }
+// }
+// .clients__item:not(:last-child){
+//   margin-right: $card-interval;
+// }
 
-.clients__link{
-  display: block;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #FFFFFF;
-  border-radius: 4px;
-  padding: 16px 31px;
-  transition: border-color 250ms $timing-function;
-}
-.clients__icon{
-  fill: #AFB1B8;
-  transition: fill 250ms $timing-function;
-}
+// .clients__link{
+//   display: block;
+//   border: 1px solid #AFB1B8;
+//   border-radius: 4px;
+//   cursor: pointer;
+//   background: #FFFFFF;
+//   border-radius: 4px;
+//   padding: 16px 31px;
+//   transition: border-color 250ms $timing-function;
+// }
+// .clients__icon{
+//   fill: #AFB1B8;
+//   transition: fill 250ms $timing-function;
+// }
 
 
 

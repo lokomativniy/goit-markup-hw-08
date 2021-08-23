@@ -146,9 +146,9 @@
             </ul>
          </div>
       </section>
-      <section class="section">
+      <section class="section section--mobile">
          <div class="container">
-            <h2 class="section__title">Чем мы занимаемся</h2>
+            <h2 class="section__title section__title--images">Чем мы занимаемся</h2>
             <ul class="images">
                <li class="images__item"> 
                      <img class="images__img" src="./images/box1.jpg" alt="box1" width="370">
@@ -173,10 +173,11 @@
       </section>
       <section class="section section--background">
          <div class="container">
-            <h2 class="section__title">Наша команда</h2>
+            <h2 class="section__title section__title--mobile">Наша команда</h2>
             <ul class="team">
                <li class="team__item">
-                  <img src="./images/ProductDesigner.jpg" alt="ProductDesigner" width="270">
+                  <img srcset="./images-x1/Product-Designer-x1.jpg 1x, ./images-2x/Product-Designer-2x.jpg 2x"
+                     src="./images-x1/Product-Designer-x1.jpg" alt="ProductDesigner" width="450">
                   <div class="team__stand">
                     <h3 class="team__name">Игорь Демьяненко</h3>
                     <p class="team__position">Product Designer</p>
@@ -212,7 +213,8 @@
                 </div>                 
                </li>
                <li class="team__item">                
-                     <img src="./images/FrontendDeveloper.jpg" alt="FrontendDeveloper" width="270">
+                     <img srcset="./images-x1/Frontend-Developer-x1.jpg 1x, ./images-2x/Frontend-Developer-2x.jpg 2x"
+                     src="./images-x1/Frontend-Developer-x1.jpg" alt="Frontend-Developer" width="450">
                      <div class="team__stand">
                         <h3 class="team__name">Ольга Репина</h3>
                         <p class="team__position">Frontend Developer</p>
@@ -249,7 +251,8 @@
                      </div>                 
                </li>        
                <li class="team__item">                
-                     <img src="./images/Marketing.jpg" alt="Marketing" width="270">
+                     <img srcset="./images-x1/Marketing-x1.jpg 1x, ./images-2x/Marketing-2x.jpg 2x"
+                     src="./images-x1/Marketing-x1.jpg" alt="Marketing" width="450">
                      <div class="team__stand">
                         <h3 class="team__name">Николай Тарасов</h3>
                         <p class="team__position">Marketing</p>
@@ -286,7 +289,8 @@
                      </div>                 
                </li>        
                <li class="team__item">             
-                     <img src="./images/UIDesigner.jpg" alt="UIDesigner" width="270">
+                     <img srcset="./images-x1/UI-Designer-x1.jpg 1x, ./images-2x/UI-Designer-2x.jpg 2x"
+                     src="./images-x1/UI-Designer-x1.jpg" alt="UI-Designer" width="450">
                      <div class="team__stand">
                          <h3 class="team__name">Михаил Ермаков</h3>
                          <p class="team__position">UI Designer</p>
@@ -378,7 +382,7 @@
    <footer class="footer"> 
       <div class="container-footer container">
          <div>
-            <a href="" class="logo logo--footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
+            <a href="" class="logo-footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
             <address class="address-footer">
                <ul class="address">
                   <li class="address__item"> <p> г. Киев, пр-т Леси Украинки, 26</p></li>
@@ -434,8 +438,14 @@
        </div>
    </footer>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
    <script src="./js/menu.js"></script>
-   <script src="./js/mobile-menu.js"></script>
+   <script defer src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>
 </html>

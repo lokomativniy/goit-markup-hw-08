@@ -6,6 +6,7 @@
 }
 .container-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 // .site-nav {
@@ -14,21 +15,21 @@
 //   align-items: center;
 //   margin: 0;
 // }
-.logo {
+
+.logo  {
   position: absolute;
   left: 15px;
   top: 16px;
   color: $accent-color;
-  font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   text-decoration: none;
   display: inline-block;
   
   &__studio {
   display: inline-block;
-  color: $logo-color;
+  color: $primary-text-color;
 }
 }
   .navigation{

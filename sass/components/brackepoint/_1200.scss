@@ -1,0 +1,346 @@
+
+ @media screen and (min-width: 1200px){
+.page-header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+  display: flex;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 93px;
+  &__studio {
+  display: inline-block;
+  color: $logo-color;
+}
+}
+
+  .navigation{
+  display: flex;
+     &__link:hover,&__link:focus{
+  fill:$accent-color;
+  color:$accent-color;
+}
+}
+  .navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+  .navigation__link {
+  color: $primary-text-color;
+  text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 33px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color 250ms $timing-function;
+ 
+}
+  .navigation__link--current {
+  color: $accent-color;
+  position: relative;
+}
+  .navigation__link--current::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: $accent-color;
+  border-radius: 2px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+
+  &__link:hover &__icon, &__link:focus &__icon{
+  fill:$accent-color; color:$accent-color;
+}
+  &__link:hover,&__link:focus{
+  color: $accent-color;
+}
+}
+
+ .contacts:not(:last-child) {
+  margin-right: 50px;
+}
+  .contacts__item {
+  display: flex
+}
+  .contacts__item:not(:last-child){
+  margin-right: $card-interval;
+}
+  .contacts__link{
+  display: flex;
+  color: $text-color;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: color 250ms $timing-function;
+
+}
+  .contacts__icon{
+  margin-right: 10px;
+  fill: $text-color;
+  transition: fill 250ms $timing-function;
+}
+
+.hero {
+  background: $background-color;
+  padding: 200px 0;
+  text-align: center;
+  height:600px;
+  // max-width: 1600px;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/background.css/background\img.jpg);
+}
+  .hero__title {
+  color: $primary-white-color;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.features {
+  display: flex;
+}
+
+.features__item{
+  // text-align: center;
+  // &:not(:last-child){
+  // margin-bottom: 30px;}
+  }
+.features__item:not(:last-child) {
+  margin-right: $card-interval;
+}
+// :not(:last-child) {
+//   margin-right: 30px;
+// }
+.features__box{
+  display: flex;
+  margin-bottom:$card-interval;
+  background: $grey-color;
+  align-items: center;
+  padding: 25px 100px;
+  border-radius: 4px;
+}
+.features__title {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.14;
+  font-size: 14px;
+  margin-bottom: 10px; 
+  text-align: center;
+}
+.features__text {
+  color: $text-color;
+  line-height: 1.71;
+}
+
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+.images__item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.images__title{
+  display: block;
+  bottom: 0;
+  padding: 27px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+}
+.images__thumb{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+}
+
+.section--background {
+  background: $grey-color;
+}
+
+.team {
+  display: flex;
+}
+.team__item:not(:last-child){
+  margin-right: 30px;
+ }
+.team__item {
+  background: $primary-white-color;
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.team__stand {
+  padding: 30px 0;
+}
+.team__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  margin-bottom: 10px;
+}
+.team__position {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}
+
+.clients{
+  display: flex;
+
+  &__link:hover &__icon, &__link:focus &__icon{
+  fill: $accent-color;
+}
+   &__link:hover, &__link:focus{
+  border-color: $accent-color;  
+}
+  &__icon:hover, &__icon:focus{
+  fill: $accent-color;
+}
+}
+.clients__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.clients__link{
+  display: block;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border-radius: 4px;
+  padding: 16px 31px;
+  transition: border-color 250ms $timing-function;
+}
+.clients__icon{
+  fill: #AFB1B8;
+  transition: fill 250ms $timing-function;
+}
+
+
+
+
+.footer {
+  background: $background-color;
+  padding: 60px 0;  
+}
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+.logo--footer {
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+.logo__studio--footer {
+  color: $primary-white-color;
+}
+.address-footer {
+  color: $primary-white-color;
+  line-height: 1.71;
+  padding-right: 1em;
+  font-style: normal;
+}
+.address{
+  &__link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  display: block;
+}
+  &__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+}
+
+.social-box{
+  margin-left: 70px;
+}
+.subscribe-box{
+  margin-left: 93px;
+}
+.social-box__title,.subscribe-box__title{
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.14;
+  color:#ffffff;
+  margin-bottom: 20px;
+  }
+  
+.form-footer{
+  display: flex;
+
+  &__input{
+  margin-right: 12px;
+  padding: 15px 15px 16px ;
+  background-color: $background-color ;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  width: 358px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  transition: filter 250ms $timing-function
+}
+  &__input::placeholder{
+  color: rgba(255, 255, 255, 0.6);
+}
+  &__input:hover,&__input:focus{
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));}
+}
+
+.btn--footer{
+  padding: 10px 28px 10px 29px;
+  align-items: center;
+}
+.btn__icon{
+  fill: #FFFFFF;
+  margin-left: 10px;
+}
+
+.social__links--footer{
+  background: #43444D;
+}
+
+.links__icon--footer{
+  fill: #FFFFFF;
+}
+}

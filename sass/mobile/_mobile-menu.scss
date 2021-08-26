@@ -1,21 +1,22 @@
-// .menu {
-//   display: flex;
-//   padding: 0;
-//   margin: 0;
-//   list-style: none;
-// }
-
-// @media (max-width: 767px) {
-//   .menu {
-//     display: none;
-//   }
-// }
-
-// @media (min-width: 768px) {
-//   .menu-toggle {
-//     display: none;
-//   }
-// }
+.menu-toggle {
+  display: inline-flex;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  &:focus &__icon, &:hover &__icon{
+   fill:$accent-color
+  }
+   @media screen and (min-width: 768px) {
+   display: none;
+  }
+}
+.menu-toggle__icon{
+  transition: fill 250ms $timing-function
+}
 
 .menu-container {
   position: fixed;
@@ -39,9 +40,9 @@
   transform: translateX(0);
 }
 .social-box {
+   position: absolute;
    display: flex;
    align-items: center;
-   flex-wrap: wrap;
 }
 .social-box__item {
    font-size: 18px;

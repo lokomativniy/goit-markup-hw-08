@@ -1,4 +1,6 @@
 .container {
+  min-width: 320px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -12,19 +14,33 @@
     width: 768px;
   }
 
-  @media screen and (min-width: 1140px) {
-    width: 1140px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 .section {
-  padding: 60px 0;
+  @media screen and (max-width: 1199px){
+  padding: 60px 0};
+
+  @media screen and (min-width: 1200px){
+  padding: 94px 0;  
+  }
 }
 .section__title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.17;
-  text-align: center;
   margin-bottom: 50px;
+  font-weight: 700;
+
+  @media screen and (max-width: 1199px){
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;}
+
+  @media screen and (min-width: 1200px){
+  line-height: 1.67;
+  text-align: center;
+  font-size: 36px;  
+  }
+  
 }
 
 .section__title--visually-hidden,

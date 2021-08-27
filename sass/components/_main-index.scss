@@ -53,21 +53,17 @@
   margin-bottom: 30px;
   }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1199px){
 .features__item{
-text-align: center;
+// text-align: center;
 &:not(:last-child){
   margin-bottom: 30px;}
 }}
-// .features__item{
-  
-//   text-align: center;
-  
+@media screen and (max-width: 768px){
+.features__item{
+text-align: center;}}
 
-// .features__item:not(:last-child) {
-//   margin-right: $card-interval;
-// }
-@media screen and (min-width: 768px) and (max-width: 1200px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
 .features {
  display: flex;
   flex-wrap: wrap;
@@ -88,7 +84,7 @@ text-align: center;
   align-items: center;
   padding: 25px 0;
   border-radius: 4px;
-  // text-align: center;
+  // text-align: left;
 }
 
 
@@ -148,7 +144,7 @@ text-align: center;
 }
 
 
-  @media screen and (min-width: 768px) and (max-width: 1200px){
+  @media screen and (min-width: 768px) and (max-width: 1199px){
   .team {
   display: flex;
   flex-wrap: wrap;
@@ -199,7 +195,18 @@ text-align: center;
   line-height: 1.19;
   margin-bottom: 16px;
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 479px){
+.clients{
+  display: block;}
+
+  .clients__item{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
   .clients{
   display: flex;
   flex-wrap: wrap;
@@ -213,8 +220,6 @@ text-align: center;
   }}
 
 
-
-
 @media screen and (min-width: 768px) and (max-width:1199px){
 .clients{
   display: flex;
@@ -222,11 +227,13 @@ text-align: center;
   margin-left: calc(-1 * 30px);}
  
  .clients__item {
-  flex-basis: calc(100% / 2 - 30px);
-  margin-left: 30px;
+  // flex-basis: calc(100% / 2 - 30px);
+  // margin-left: 30px;
    flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   }}
+
+
 
 
 .clients{

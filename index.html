@@ -176,19 +176,22 @@
             <h2 class="section__title section__title--images">Чем мы занимаемся</h2>
             <ul class="images">
                <li class="images__item"> 
-                     <img class="images__img" src="./images/box1.jpg" alt="box1" width="370">
+                     <img class="" srcset="./images/box1.jpg 1x, ./images-2x/box1-x2.jpg 2x"
+                     src="./images/box1.jpg" alt="box1" width="370">
                      <div class="images__thumb">
                         <h3 class="images__title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                      </div>
                </li>
                <li class="images__item"> 
-                     <img class="images__img" src="./images/box2.jpg" alt="box2" width="370">
+                     <img class="" srcset="./images/box2.jpg 1x, ./images-2x/box2-x2.jpg 2x"
+                     src="./images/box2.jpg" alt="box2" width="370">
                      <div class="images__thumb">
                         <h3 class="images__title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                      </div>
                   </li>
                <li class="images__item"> 
-                     <img class="images__img" src="./images/box3.jpg" alt="box3" width="370">
+                     <img class="" srcset="./images/box3.jpg 1x, ./images-2x/box3-x2.jpg 2x"
+                     src="./images/box3.jpg" alt="box3" width="370">
                      <div class="images__thumb">
                         <h3 class="images__title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                      </div>
@@ -404,52 +407,53 @@
          </div>
       </section>
    </main>
-   <footer class="footer"> 
-     <div class="container-footer container">
-         <div>
-            <a href="" class="logo logo--footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
-            <address class="address-footer">
-               <ul class="address">
-                  <li class="address__item"> <p> г. Киев, пр-т Леси Украинки, 26</p></li>
-                  <li class="address__item"> <a href="mailto:info@example.com" class="address__link">info@example.com</a></li>
-                  <li class="address__item"> <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a></li>
+<footer class="footer"> 
+      <div class="container-footer container">
+         <div class="adress-social-box">
+            <div class="logo-address-box">
+               <a href="" class=" logo-footer">Web<span class="logo__studio logo__studio--footer">Studio</span></a>
+               <address class="address-footer">
+                  <ul class="address">
+                     <li class="address__item"> <p> г. Киев, пр-т Леси Украинки, 26</p></li>
+                     <li class="address__item"> <a href="mailto:info@example.com" class="address__link">info@example.com</a></li>
+                     <li class="address__item"> <a href="tel:+380991111111" class="address__link">+38 099 111 11 11</a></li>
+                  </ul>
+               </address>
+            </div>
+             <div class="social-box-footer">
+               <h3 class="social-box__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+                <ul class="social">
+                  <li class="social__item">
+                     <a href="" class="social__links social__links--footer">
+                        <svg class="social__icon links__icon--footer" width="20" height="20">
+                           <use href="./images/sprite.svg#icon-instagram-2"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__links social__links--footer">
+                       <svg class="social__icon links__icon--footer" width="20" height="20">
+                           <use href="./images/sprite.svg#icon-twitter-1"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a href="" class="social__links social__links--footer">
+                       <svg class="social__icon links__icon--footer" width="20" height="20">
+                           <use href="./images/sprite.svg#icon-facebook-1"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a href="" class="social__links social__links--footer">
+                        <svg class="social__icon links__icon--footer" width="20" height="20">
+                           <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                        </svg>
+                     </a>
+                  </li>
                </ul>
-            </address>
+            </div>
          </div>
-          <div class="social-box">
-            <h3 class="social-box__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-             <ul class="social">
-               <li class="social__item">
-                  <a href="" class="social__links social__links--footer">
-                     <svg class="social__icon links__icon--footer" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-instagram-2"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="social__item">
-                 <a href="" class="social__links social__links--footer">
-                    <svg class="social__icon links__icon--footer" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-twitter-1"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a href="" class="social__links social__links--footer">
-                    <svg class="social__icon links__icon--footer" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-facebook-1"></use>
-                     </svg>
-                  </a>
-               </li>
-               <li class="social__item">
-                  <a href="" class="social__links social__links--footer">
-                     <svg class="social__icon links__icon--footer" width="20" height="20">
-                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
-                     </svg>
-                  </a>
-               </li>
-            </ul>
-         </div>
-      </div>
          <div class="subscribe-box">
             <h3 class="subscribe-box__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
             <form class="form-footer">
@@ -462,15 +466,9 @@
                </form>
          </div>
        </div>
-
    </footer>
-    <!-- <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script> -->
-   <!-- <script src="./js/menu.js"></script> -->
+</body>
+</html>
    <script defer src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
 </body>

@@ -370,10 +370,6 @@ img {
   display: flex;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .contacts__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,8 +407,8 @@ img {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.css/Header-480.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.css/Header-480.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.css/Header-480jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.css/Header-480jpg);
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -438,6 +434,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding: 200px 0;
     height: 600px;
     max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.css/Header-1600.jpg);
@@ -459,6 +456,22 @@ img {
   line-height: 42px;
   letter-spacing: 0.06em;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1423,31 +1436,6 @@ img {
 @media screen and (min-width: 1200px) {
   .contacts__item:not(:last-child) {
     margin-right: 30px;
-  }
-  .hero {
-    background: #2f303a;
-    padding: 200px 0;
-    text-align: center;
-    height: 600px;
-    background-repeat: no-repeat;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.css/background\img.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.css/background\img.jpg);
-  }
-  .hero__title {
-    color: #ffffff;
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   .features__item:not(:last-child) {
     margin-right: 30px;

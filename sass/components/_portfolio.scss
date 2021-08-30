@@ -87,15 +87,15 @@
 }
 
   .projects__link {
+    height: 100%;
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   text-decoration: none;
   color: $primary-text-color; 
   transition: box-shadow 250ms $timing-function;
 }
   .projects__box {
-  flex-grow:3 ;
+  flex-grow:1 ;
   padding: 20px 24px;
   border-left: 1px solid #EEEEEE; 
   border-right: 1px solid #EEEEEE; 

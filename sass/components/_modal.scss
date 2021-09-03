@@ -1,20 +1,26 @@
 .modal{
-  position: relative;
+  position: absolute;
   padding: 40px;
   border-radius: 4px;
   background: #FFFFFF;
-   &__btn-close:hover &__btn-icon, &__btn-close:hover &__btn-icon{
-  fill:$accent-color
-}
-  @media screen and (min-width: 480px) {
-   width: 450px;
-   position: absolute;
-   top: 50%;
+  top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
-  @media screen and (min-width: 1170px){
-    width: 528px;
+  
+   &__btn-close:hover &__btn-icon, &__btn-close:hover &__btn-icon{
+  fill:$accent-color;}
+//  @media screen and (max-width: 479px){
+//   max-width: 450px;
+//  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+
+   min-width: 450px;
+  }
+   
+
+  @media screen and (min-width: 1200px){
+  min-width: 528px;
   }
 }
 .modal__btn-close{

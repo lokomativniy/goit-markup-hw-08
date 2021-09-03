@@ -30,7 +30,7 @@ img {
 
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    min-width: 320px;
   }
 }
 
@@ -729,30 +729,29 @@ img {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   padding: 40px;
   border-radius: 4px;
   background: #FFFFFF;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .modal__btn-close:hover .modal__btn-icon, .modal__btn-close:hover .modal__btn-icon {
   fill: #2196f3;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
-    width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    min-width: 450px;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
   }
 }
 
